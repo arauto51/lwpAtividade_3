@@ -1,0 +1,42 @@
+
+<style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 5px;
+        }
+        th {
+          text-align: left;
+        }
+    </style>
+
+
+
+
+<table style="width:10%">
+
+        <section *ngFor='let localidade of localidades | async' >
+       
+         <tr>
+                <th>DATA</th>
+                 <th>VALOR</th> 
+        </tr>
+         <tr>         
+                <td><p>{{localidade.data}}</p></td>
+                <td><p>{{localidade.valor}}</p></td> 
+
+
+        </section>
+
+</table>
+
+
+
+
+
+
+
+
+
